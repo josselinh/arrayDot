@@ -1,8 +1,14 @@
-# arrayDot
+# ArrayDot
+## Set a key => value
+    $array = [];
+    setArrayDot($array, 'my.key.path', 'myValue');
 
-// Set a key => value with arrayDot
-$array = [];
-setArrayDot($array, 'my.key.path', 'test');
-
-// Get a key with arrayDot
-print(getArrayDot($array, 'my.key.path'));
+## Get a key
+    $array = [
+    	'my' => [
+    		'key' => [
+    			'path' => 'myValue',
+    		],
+    	],
+    ];
+    echo getArrayDot($array, 'my.key.path');
