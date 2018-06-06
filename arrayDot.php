@@ -1,4 +1,6 @@
-if (!function_exists('seArrayDot')) {
+<?php
+
+if (!function_exists('setArrayDot')) {
 
     /**
      * Set array with dot notation
